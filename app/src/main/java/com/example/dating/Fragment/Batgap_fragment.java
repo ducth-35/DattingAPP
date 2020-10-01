@@ -127,15 +127,15 @@ public class Batgap_fragment extends Fragment {
 
     private void addList() {
         batgaps = new ArrayList<>();
-        batgaps.add(new Batgap(R.drawable.gai1, "Mai Trang 1", "18", "Hà Nội 1"));
-        batgaps.add(new Batgap(R.drawable.gai2, "Mai Trang 2", "20", "Hà Nội 2"));
-        batgaps.add(new Batgap(R.drawable.gai3, "Mai Trang 3", "20", "Hà Nội 3"));
-        batgaps.add(new Batgap(R.drawable.gai2, "Mai Trang 4", "19", "Hà Nội 4"));
-        batgaps.add(new Batgap(R.drawable.gai1, "Mai Trang 5", "20", "Hà Nội 5"));
-        batgaps.add(new Batgap(R.drawable.gai1, "Mai Trang 6", "21", "Hà Nội 6"));
-        batgaps.add(new Batgap(R.drawable.gai2, "Mai Trang 7", "24", "Hà Nội 7"));
-        batgaps.add(new Batgap(R.drawable.gai3, "Mai Trang 8", "20", "Hà Nội 8"));
-        batgaps.add(new Batgap(R.drawable.gai2, "Mai Trang 9", "23", "Hà Nội 9"));
-        batgaps.add(new Batgap(R.drawable.gai1, "Mai Trang 10", "20", "Hà Nội 20"));
+        batgaps.add(new Batgap(R.drawable.gai5, "Mai Trang 1", "18", "Hà Nội 1"));
+        batgaps.add(new Batgap(R.drawable.gai4, "Mai Trang 2", "20", "Hà Nội 2"));
+        batgaps.add(new Batgap(R.drawable.gai6, "Mai Trang 3", "20", "Hà Nội 3"));
+        batgaps.add(new Batgap(R.drawable.gai7, "Mai Trang 4", "19", "Hà Nội 4"));
+        batgaps.add(new Batgap(R.drawable.gai4, "Mai Trang 5", "20", "Hà Nội 5"));
+        batgaps.add(new Batgap(R.drawable.gai5, "Mai Trang 6", "21", "Hà Nội 6"));
+        batgaps.add(new Batgap(R.drawable.gai6, "Mai Trang 7", "24", "Hà Nội 7"));
+        batgaps.add(new Batgap(R.drawable.gai7, "Mai Trang 8", "20", "Hà Nội 8"));
+        batgaps.add(new Batgap(R.drawable.gai4, "Mai Trang 9", "23", "Hà Nội 9"));
+        batgaps.add(new Batgap(R.drawable.gai5, "Mai Trang 10", "20", "Hà Nội 20"));
     }
 }
