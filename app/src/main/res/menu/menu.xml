@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ganday"
+        android:icon="@drawable/ganday_icon"
+        android:title=""></item>
+    <item
+        android:id="@+id/batgap"
+        android:icon="@drawable/batgap_icon"
+        android:title="">
+    </item>
+    <item
+        android:id="@+id/nhantin"
+        android:icon="@drawable/chat"
+        android:title="">
+    </item>
+    <item
+        android:id="@+id/hoso"
+        android:icon="@drawable/person_icon"
+        android:title="">
+    </item>
+
+</menu>
