@@ -20,30 +20,32 @@
             android:orientation="horizontal">
 
             <TextView
-                android:paddingLeft="10dp"
-                android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nhắn tin"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Chat"
                 android:textColor="#000000"
                 android:textSize="38sp"
                 android:textStyle="bold" />
         </LinearLayout>
-
-        <LinearLayout
-            android:gravity="center"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/setting" />
-        </LinearLayout>
-
-
     </LinearLayout>
-
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listonline"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#72000000"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"

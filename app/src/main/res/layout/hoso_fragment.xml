@@ -20,10 +20,10 @@
             android:orientation="horizontal">
 
             <TextView
-                android:paddingLeft="10dp"
-                android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"
                 android:text="Hồ sơ"
                 android:textColor="#000000"
                 android:textSize="38sp"
@@ -31,10 +31,11 @@
         </LinearLayout>
 
         <LinearLayout
-            android:gravity="center"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:gravity="center">
+
             <ImageView
                 android:id="@+id/settings"
                 android:layout_width="30dp"
@@ -46,10 +47,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_weight="19"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        android:layout_weight="19"
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -60,8 +62,9 @@
                 android:layout_width="170dp"
                 android:layout_height="170dp"
                 android:layout_gravity="center"
-                android:src="@drawable/gai1"
-                android:layout_marginTop="5dp"/>
+                android:layout_marginTop="@dimen/_5sdp"
+                android:id="@+id/img_hoso"
+                android:src="@drawable/gai1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -71,31 +74,31 @@
                 android:weightSum="2">
 
                 <LinearLayout
-                    android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="@dimen/_5sdp"
                     android:orientation="horizontal"
                     android:weightSum="4">
 
                     <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="140dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120dp"
                         android:layout_weight="2"
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="right"
-                            android:text=" Huỳnh Đức, 19"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="Huỳnh Đức"
                             android:textColor="#000000"
                             android:textSize="18sp"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:layout_width="15dp"
-                            android:layout_height="match_parent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:text=","
                             android:textColor="#000000"
                             android:textSize="18sp"
@@ -129,93 +132,107 @@
         </LinearLayout>
 
         <LinearLayout
-            android:weightSum="5"
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="5">
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:weightSum="5">
+
             <LinearLayout
-                android:layout_marginLeft="10dp"
-                android:weightSum="10"
-                android:orientation="horizontal"
-                android:layout_weight="4"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
                 <RelativeLayout
-                    android:layout_weight="8"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8">
+
                     <de.hdodenhof.circleimageview.CircleImageView
-                        android:src="@drawable/credit"
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"/>
+                        android:layout_width="48dp"
+                        android:layout_height="45dp"
+                        android:background="@drawable/custom_logo2"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/tym2" />
+
                     <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="12dp"
+                        android:layout_height="26dp"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="40dp"
-                        android:src="@drawable/daucong"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"/>
+                        android:background="@drawable/custom_logo"
+                        android:src="@drawable/daucong" />
                 </RelativeLayout>
+
                 <LinearLayout
-                    android:layout_weight="2"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp">
+                    android:layout_height="60dp"
+                    android:layout_weight="2">
+
                     <TextView
-                        android:textColor="#F000"
-                        android:textStyle="bold"
-                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:text="Mua credit"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
+                        android:textColor="#F000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
+
             <TextView
-                android:layout_marginRight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
                 android:layout_marginLeft="90dp"
-                android:background="#e6e6e6"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"/>
+                android:background="#B0A3A3" />
+
             <LinearLayout
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="4"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <LinearLayout
-                    android:weightSum="10"
-                    android:orientation="horizontal"
-                    android:layout_weight="3"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="4"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <RelativeLayout
-                        android:layout_weight="8"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="46dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/custom_logo2"
+                        android:padding="@dimen/_5sdp"
+                        android:src="@drawable/gold" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="12dp"
+                        android:layout_height="26dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/custom_logo"
+                        android:src="@drawable/daucong" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="2">
+
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:src="@drawable/gold"
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"/>
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_marginLeft="30dp"
-                            android:layout_marginTop="40dp"
-                            android:src="@drawable/daucong"
-                            android:layout_width="30dp"
-                            android:layout_height="30dp"/>
-                    </RelativeLayout>
-                    <LinearLayout
-                        android:layout_weight="2"
-                        android:layout_width="match_parent"
-                        android:layout_height="60dp">
-                        <TextView
-                            android:textColor="#F000"
-                            android:textStyle="bold"
-                            android:textSize="18sp"
-                            android:layout_gravity="center_vertical"
-                            android:text="Kích hoạt Dating Gold"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"/>
-                    </LinearLayout>
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="Kích hoạt Dating Gold"
+                        android:textColor="#F000"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

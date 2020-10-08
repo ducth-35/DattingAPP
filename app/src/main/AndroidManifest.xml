@@ -9,23 +9,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".View_item">
-
-        </activity>
-        <activity android:name=".Login_Activity" />
+        <activity android:name=".Chat.Nhantin_Activity"></activity>
+        <activity android:name=".Activity.MainActivity2" />
+        <activity android:name=".Fragment.Ngonngu" />
+        <activity android:name=".Fragment.Hutthuoc" />
+        <activity android:name=".Fragment.Ruoubia" />
+        <activity android:name=".Fragment.Cannang" />
+        <activity android:name=".Fragment.Chieucao" />
+        <activity android:name=".Activity.Veban" />
+        <activity android:name=".Activity.Conviec_hocvan" />
+        <activity android:name=".Activity.Taikhoan" />
+        <activity android:name=".Activity.Thongtincanhhan" />
+        <activity android:name=".Activity.Setting_activity" />
+        <activity android:name=".Activity.Login_Activity" />
         <activity
             android:name=".ui.login.LoginActivity"
             android:label="@string/title_activity_login" />
-        <activity android:name=".Manhinhchao">
+        <activity android:name=".Activity.Manhinhchao">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".Activity.MainActivity" />
     </application>
 
 </manifest>

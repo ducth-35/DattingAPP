@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.dating.R;
 import com.example.dating.model.Batgap;
 import com.squareup.picasso.Picasso;
@@ -27,7 +28,6 @@ public class Batgap_adapter extends RecyclerView.Adapter<Batgap_adapter.ViewHold
     }
 
 
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -39,6 +39,8 @@ public class Batgap_adapter extends RecyclerView.Adapter<Batgap_adapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.setData(items.get(position));
+        Glide.with(c).load(items.get(position).getImage()).into(holder.image);
+
     }
 
     @Override
@@ -62,7 +64,7 @@ public class Batgap_adapter extends RecyclerView.Adapter<Batgap_adapter.ViewHold
             Picasso.get()
                     .load(data.getImage())
                     .fit()
-                    .centerCrop()
+                    .centerInside()
                     .into(image);
             name.setText(data.getNama());
             age.setText(data.getAge());
