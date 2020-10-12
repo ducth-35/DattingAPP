@@ -9,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
@@ -43,19 +42,19 @@ public class Ganday_fragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mlist = new ArrayList<>();
-        mlist.add(new Ganday(R.drawable.gai1, "Mai Trang 1","","21","Hà Nội", ""));
-        mlist.add(new Ganday(R.drawable.gai2, "Mai Trang 2","", "22","Hà Nội", ""));
-        mlist.add(new Ganday(R.drawable.gai3, "Mai Trang 3","", "22","Hà Nội", ""));
-        mlist.add(new Ganday(R.drawable.gai1, "Mai Trang 4","", "22","Hà Nội", ""));
-        mlist.add(new Ganday(R.drawable.gai2, "Mai Trang 5","", "22","Hà Nội", ""));
-        mlist.add(new Ganday(R.drawable.gai3, "Mai Trang 6","", "22","Hà Nội", ""));
-        mlist.add(new Ganday(R.drawable.gai1, "Mai Trang 7","", "22","Hà Nội", ""));
-        mlist.add(new Ganday(R.drawable.gai2, "Mai Trang 8","", "22","Hà Nội", ""));
-        mlist.add(new Ganday(R.drawable.gai3, "Mai Trang 9","", "22","Hà Nội", ""));
-        mlist.add(new Ganday(R.drawable.gai1, "Mai Trang 4","", "22","Hà Nội", ""));
-        mlist.add(new Ganday(R.drawable.gai2, "Mai Trang 5","", "22","Hà Nội", ""));
-        mlist.add(new Ganday(R.drawable.gai3, "Mai Trang 6","", "22","Hà Nội", ""));
-        mlist.add(new Ganday(R.drawable.gai1, "Mai Trang 7","", "22","Hà Nội", ""));
-        mlist.add(new Ganday(R.drawable.gai2, "Mai Trang 8","", "22","Hà Nội", ""));
+        mlist.add(new Ganday(R.drawable.gai1, "Mai Trang 1","","21"));
+        mlist.add(new Ganday(R.drawable.gai2, "Mai Trang 2","", "22"));
+        mlist.add(new Ganday(R.drawable.gai3, "Mai Trang 3","", "22"));
+        mlist.add(new Ganday(R.drawable.gai1, "Mai Trang 4","", "22"));
+        mlist.add(new Ganday(R.drawable.gai2, "Mai Trang 5","", "22"));
+        mlist.add(new Ganday(R.drawable.gai3, "Mai Trang 6","", "22"));
+        mlist.add(new Ganday(R.drawable.gai1, "Mai Trang 7","", "22"));
+        mlist.add(new Ganday(R.drawable.gai2, "Mai Trang 8","", "22"));
+        mlist.add(new Ganday(R.drawable.gai3, "Mai Trang 9","", "22"));
+        mlist.add(new Ganday(R.drawable.gai1, "Mai Trang 4","", "22"));
+        mlist.add(new Ganday(R.drawable.gai2, "Mai Trang 5","", "22"));
+        mlist.add(new Ganday(R.drawable.gai3, "Mai Trang 6","", "22"));
+        mlist.add(new Ganday(R.drawable.gai1, "Mai Trang 7","", "22"));
+        mlist.add(new Ganday(R.drawable.gai2, "Mai Trang 8","", "22"));
     }
 }

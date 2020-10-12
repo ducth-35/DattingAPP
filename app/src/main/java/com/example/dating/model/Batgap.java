@@ -2,16 +2,16 @@ package com.example.dating.model;
 
 public class Batgap {
     private int image;
-    private String nama, age, kota;
+    private String name, age, address;
 
     public Batgap() {
     }
 
-    public Batgap(int image, String nama, String age, String kota) {
+    public Batgap(int image, String name, String age, String address) {
         this.image = image;
-        this.nama = nama;
+        this.name = name;
         this.age = age;
-        this.kota = kota;
+        this.address = address;
     }
 
     public int getImage() {
@@ -22,12 +22,12 @@ public class Batgap {
         this.image = image;
     }
 
-    public String getNama() {
-        return nama;
+    public String getName() {
+        return name;
     }
 
-    public void setNama(String nama) {
-        this.nama = nama;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getAge() {
@@ -38,11 +38,11 @@ public class Batgap {
         this.age = age;
     }
 
-    public String getKota() {
-        return kota;
+    public String getAddress() {
+        return address;
     }
 
-    public void setKota(String kota) {
-        this.kota = kota;
+    public void setAddress(String address) {
+        this.address = address;
     }
 }

@@ -66,7 +66,7 @@ public class Batgap_adapter extends RecyclerView.Adapter<Batgap_adapter.ViewHold
                     .fit()
                     .centerInside()
                     .into(image);
-            name.setText(data.getNama());
+            name.setText(data.getName());
             age.setText(data.getAge());
         }
     }

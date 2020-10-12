@@ -9,11 +9,14 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.dating.Fragment.BottomSheet;
 import com.example.dating.Fragment.Ganday_fragment;
 import com.example.dating.R;
 import com.example.dating.model.Ganday;
@@ -48,29 +51,37 @@ public class Ganday_adapter extends RecyclerView.Adapter<Ganday_adapter.MyViewHo
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(context);
-                View botton = LayoutInflater.from(context).inflate(R.layout.show_item_dialog,(LinearLayout) view.findViewById(R.id.item_show));
-                RoundedImageView itemImage;
-                TextView itemName;
-                TextView itemCity;
-                TextView itemAge;
-                final ImageButton close;
-
-                itemCity = botton.findViewById(R.id.item_city);
-                itemAge = botton.findViewById(R.id.item_age);
-                itemImage = botton.findViewById(R.id.image_show);
-                itemName = botton.findViewById(R.id.item_name);
-                close = botton.findViewById(R.id.close);
-
-                itemAge.setText(String.valueOf(ganday.getAge()));
-                itemCity.setText(ganday.getCity());
-                itemName.setText(ganday.getText());
-                Glide.with(context).load(ganday.getImage()).into(itemImage);
-                bottomSheetDialog.setContentView(botton);
-                bottomSheetDialog.show();
+                BottomSheet bottomSheetDialog = BottomSheet.newInstance();
+                bottomSheetDialog.show(((AppCompatActivity) context).getSupportFragmentManager(),"Bottom Sheet Dialog Fragment");
 
             }
         });
+//        holder.itemView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(context);
+//                View botton = LayoutInflater.from(context).inflate(R.layout.show_item_dialog,(LinearLayout) view.findViewById(R.id.item_show));
+//                RoundedImageView itemImage;
+//                TextView itemName;
+//                TextView itemCity;
+//                TextView itemAge;
+//                final ImageButton close;
+//
+//                itemCity = botton.findViewById(R.id.item_city);
+//                itemAge = botton.findViewById(R.id.item_age);
+//                itemImage = botton.findViewById(R.id.image_show);
+//                itemName = botton.findViewById(R.id.item_name);
+//                close = botton.findViewById(R.id.close);
+//
+//                itemAge.setText(String.valueOf(ganday.getAge()));
+//                itemCity.setText(ganday.getCity());
+//                itemName.setText(ganday.getText());
+//                Glide.with(context).load(ganday.getImage()).into(itemImage);
+//                bottomSheetDialog.setContentView(botton);
+//                bottomSheetDialog.show();
+//
+//            }
+//        });
     }
 
     @Override

@@ -10,7 +10,7 @@ public class Ganday {
 
 
 
-    public Ganday(int image, String text, String statu, String age, String city, String name) {
+    public Ganday(int image, String text, String statu, String age) {
         this.image = image;
         this.text = text;
         Statu = statu;

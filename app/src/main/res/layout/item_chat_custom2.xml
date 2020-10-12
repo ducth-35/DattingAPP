@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_mess"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:src="@drawable/gai1" />
+
+        <TextView
+            android:id="@+id/name_mess"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Mai Trang 1"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
