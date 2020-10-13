@@ -22,7 +22,6 @@ public class nhantin_fragment extends Fragment {
     private RecyclerView recyclerview2;
     Chat_adapter adapter;
     Chat2_adapter adapter2;
-
     List<Chat_model> list;
     View view;
 
@@ -50,13 +49,13 @@ public class nhantin_fragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         list = new ArrayList<>();
-        list.add(new Chat_model(R.drawable.gai1, "Mai Trang 1", R.drawable.online, "Tối nay đi chơi không bạn", "5phút", "1"));
-        list.add(new Chat_model(R.drawable.gai2, "Mai Trang 2",  R.drawable.online, "Nay tao qua nhà mày chơi nha", "5phút", "4"));
-        list.add(new Chat_model(R.drawable.gai3, "Mai Trang 3", R.drawable.online, "Tối có nhà không", "5phút", "1"));
-        list.add(new Chat_model(R.drawable.gai4, "Mai Trang 4",  R.drawable.online, "Mai qua tao chơi", "5phút", "66"));
-        list.add(new Chat_model(R.drawable.gai1, "Mai Trang 1",  R.drawable.online, "Tối nay đi chơi không bạn", "5phút", "1"));
-        list.add(new Chat_model(R.drawable.gai2, "Mai Trang 2",  R.drawable.online, "Bố mẹ mày có nhà không", "5phút", "2"));
-        list.add(new Chat_model(R.drawable.gai3, "Mai Trang 3",  R.drawable.online, "Tối nay đi chơi không bạn", "5phút", "1"));
-        list.add(new Chat_model(R.drawable.gai4, "Mai Trang 4",  R.drawable.online, "Đi ăn đi", "5phút", "3"));
+        list.add(new Chat_model(R.drawable.gai1, "Nguyễn Mai Trang", R.drawable.online, "Tối nay đi chơi không bạn", "5phút", "1"));
+        list.add(new Chat_model(R.drawable.gai2, "Thảo Vy", R.drawable.online, "Nay tao qua nhà mày chơi nha", "1phút", "4"));
+        list.add(new Chat_model(R.drawable.gai3, "Nguyễn Huyền", R.drawable.online, "Tối có nhà không", "1phút", "1"));
+        list.add(new Chat_model(R.drawable.gai4, "Trần Ngọc Anh", R.drawable.online, "Mai qua tao chơi", "2phút", "66"));
+        list.add(new Chat_model(R.drawable.gai1, "Ngọc Mai", R.drawable.online, "Tối nay đi chơi không bạn", "3phút", "1"));
+        list.add(new Chat_model(R.drawable.gai2, "Thùy Linh", R.drawable.online, "Bố mẹ mày có nhà không", "5phút", "2"));
+        list.add(new Chat_model(R.drawable.gai3, "Quỳnh Anh", R.drawable.online, "Tối nay đi chơi không bạn", "5phút", "1"));
+        list.add(new Chat_model(R.drawable.gai4, "Phương Anh", R.drawable.online, "Đi ăn đi", "5phút", "3"));
     }
 }

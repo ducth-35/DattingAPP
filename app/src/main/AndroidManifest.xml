@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Fragment.BottomSheet"></activity>
+        <activity android:name=".Activity.Chonloc"></activity>
+        <activity android:name=".Fragment.BottomSheet" />
         <activity android:name=".Chat.Nhantin_Activity" />
         <activity android:name=".Activity.MainActivity2" />
         <activity android:name=".Fragment.Ngonngu" />

@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
@@ -14,11 +16,12 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class Nhantin_Activity extends AppCompatActivity {
 private TextView tv1, tv2;
 private CircleImageView circleimageview1, circleimageview2;
-
+private ImageView imageView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nhantin_);
+        imageView = findViewById(R.id.img_back3);
         tv1 = findViewById(R.id.name_message);
         tv2 = findViewById(R.id.online_chat);
         circleimageview1 = findViewById(R.id.image_chat);
@@ -31,5 +34,11 @@ private CircleImageView circleimageview1, circleimageview2;
         Glide.with(this).load(image).into(circleimageview1);
         Glide.with(this).load(image_status1).into(circleimageview2);
         tv1.setText(name);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
     }
 }

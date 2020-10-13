@@ -124,7 +124,7 @@
                     android:src="@drawable/ic_check" />
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/tv_boqua1"
                     android:gravity="center"
                     android:layout_marginTop="@dimen/_20sdp"
                     android:layout_width="match_parent"

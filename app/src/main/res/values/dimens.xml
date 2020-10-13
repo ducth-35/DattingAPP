@@ -27,5 +27,6 @@
     <dimen name="_65sdp">55dp</dimen>
     <dimen name="_300sdp">250dp</dimen>
     <dimen name="_250sdp">300dp</dimen>
+    <dimen name="_240sdp">245dp</dimen>
     <dimen name="_600sdp">600dp</dimen>
 </resources>

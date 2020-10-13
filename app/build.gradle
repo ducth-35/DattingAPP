@@ -44,5 +44,9 @@ dependencies {
     implementation 'com.makeramen:roundedimageview:2.3.0'
     implementation 'com.google.android:flexbox:2.0.1'
     implementation 'io.apptik.widget:multislider:1.3'
-    implementation 'com.android.support:design:28.0.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-compat:28.0.0'
+    implementation 'me.bendik.simplerangeview:simplerangeview:0.2.0'
+    compile 'com.crystal:crystalrangeseekbar:1.1.3'
+
 }

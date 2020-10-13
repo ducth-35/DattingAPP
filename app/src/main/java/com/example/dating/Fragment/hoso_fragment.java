@@ -25,6 +25,11 @@ public class hoso_fragment extends Fragment {
         view = inflater.inflate(R.layout.hoso_fragment, container, false);
         settings = (ImageView) view.findViewById(R.id.settings);
         image = view.findViewById(R.id.img_hoso);
+        settings();
+        image();
+        return view;
+    }
+    private void settings(){
         settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -32,6 +37,8 @@ public class hoso_fragment extends Fragment {
                 startActivity(intent);
             }
         });
+    }
+    private void image(){
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,6 +46,5 @@ public class hoso_fragment extends Fragment {
                 startActivity(intent);
             }
         });
-        return view;
     }
 }

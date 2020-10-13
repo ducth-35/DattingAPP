@@ -35,6 +35,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1">
             <ImageView
+                android:id="@+id/img_chonloc"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:background="@drawable/setting" />

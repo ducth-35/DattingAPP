@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
@@ -33,7 +34,7 @@ public class Thongtincanhhan extends AppCompatActivity {
             linearLayout7,
             linearLayout8,
             linearLayout9;
-
+    private ImageView imageView;
 
 
     @Override
@@ -49,6 +50,7 @@ public class Thongtincanhhan extends AppCompatActivity {
         linearLayout7 = findViewById(R.id.ruoubia);
         linearLayout8 = findViewById(R.id.hutthuoc);
         linearLayout9 = findViewById(R.id.ngonngu);
+        imageView = findViewById(R.id.img_back4);
         linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -123,6 +125,12 @@ public class Thongtincanhhan extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
 
+            }
+        });
     }
 }
