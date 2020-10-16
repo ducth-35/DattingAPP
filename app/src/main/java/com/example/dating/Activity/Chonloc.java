@@ -1,7 +1,10 @@
 package com.example.dating.Activity;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -66,17 +69,36 @@ public class Chonloc extends AppCompatActivity {
 
     private void radioButton() {
         rd_group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
             @Override
             public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 switch (i) {
                     case R.id.rd_btn1:
                         Toast.makeText(getApplicationContext(), "Nam", Toast.LENGTH_SHORT).show();
+                        radioButton1.setBackground(getDrawable(R.drawable.custom_button_pressed));
+                        radioButton2.setBackground(null);
+                        radioButton3.setBackground(null);
+                        radioButton1.setTextColor(Color.WHITE);
+                        radioButton2.setTextColor(Color.BLACK);
+                        radioButton3.setTextColor(Color.BLACK);
                         break;
                     case R.id.rd_btn2:
                         Toast.makeText(getApplicationContext(), "Nữ", Toast.LENGTH_SHORT).show();
+                        radioButton2.setBackground(getDrawable(R.drawable.custom_button_pressed));
+                        radioButton1.setBackground(null);
+                        radioButton3.setBackground(null);
+                        radioButton2.setTextColor(Color.WHITE);
+                        radioButton1.setTextColor(Color.BLACK);
+                        radioButton3.setTextColor(Color.BLACK);
                         break;
                     case R.id.rd_btn3:
                         Toast.makeText(getApplicationContext(), "Cả hai", Toast.LENGTH_SHORT).show();
+                        radioButton3.setBackground(getDrawable(R.drawable.custom_button_pressed));
+                        radioButton1.setBackground(null);
+                        radioButton2.setBackground(null);
+                        radioButton3.setTextColor(Color.WHITE);
+                        radioButton1.setTextColor(Color.BLACK);
+                        radioButton2.setTextColor(Color.BLACK);
                         break;
                 }
             }

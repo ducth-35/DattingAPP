@@ -46,45 +46,152 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:id="@+id/scrollview"
         android:scrollbars="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
             android:layout_weight="4"
             android:orientation="vertical">
 
-            <com.google.android.flexbox.FlexboxLayout
+            <LinearLayout
+                android:id="@+id/sum_image"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_8sdp"
-                app:alignContent="stretch"
-                app:alignItems="flex_start"
-                app:flexDirection="row"
-                app:flexWrap="wrap">
+                android:layout_height="@dimen/_300sdp"
+                android:layout_below="@id/deltaRelative"
+                android:orientation="vertical"
+                android:weightSum="3"
+                tools:ignore="NotSibling">
 
-                <com.makeramen.roundedimageview.RoundedImageView
-                    android:layout_width="@dimen/_200sdp"
-                    android:layout_height="@dimen/_200sdp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/gai2"
-                    app:riv_corner_radius="10sp" />
-                <com.makeramen.roundedimageview.RoundedImageView
-                    android:layout_width="@dimen/_100sdp"
-                    android:layout_height="@dimen/_100sdp"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/gai2"
-                    app:riv_corner_radius="10sp" />
-                
-            </com.google.android.flexbox.FlexboxLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingTop="@dimen/_5sdp">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gai1"
+                            app:riv_corner_radius="@dimen/_8sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingRight="@dimen/_5sdp">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/gai2"
+                                app:riv_corner_radius="@dimen/_8sdp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="@dimen/_5sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingRight="@dimen/_5sdp">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/gai3"
+                                app:riv_corner_radius="@dimen/_8sdp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gai4"
+                            app:riv_corner_radius="@dimen/_8sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gai1"
+                            app:riv_corner_radius="@dimen/_8sdp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/_5sdp"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp">
+
+                        <com.makeramen.roundedimageview.RoundedImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/gai4"
+                            app:riv_corner_radius="@dimen/_8sdp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
 
             <LinearLayout
+                android:id="@+id/taikhoan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/taikhoan"
                 android:layout_weight="1"
                 android:orientation="vertical"
                 android:weightSum="2">
@@ -152,11 +259,11 @@
             </LinearLayout>
             <!--//-->
             <LinearLayout
+                android:id="@+id/them"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:layout_weight="1"
-                android:id="@+id/them"
                 android:orientation="vertical"
                 android:weightSum="2">
 
@@ -191,17 +298,17 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="#C6EB1111"
-                        android:text="Thêm" />
+                        android:text="Thêm"
+                        android:textColor="#C6EB1111" />
                 </LinearLayout>
             </LinearLayout>
             <!--//-->
             <LinearLayout
+                android:id="@+id/hocvan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:layout_weight="1"
-                android:id="@+id/hocvan"
                 android:orientation="vertical"
                 android:weightSum="2">
 
@@ -236,19 +343,19 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="#C6EB1111"
-                        android:text="Thêm" />
+                        android:text="Thêm"
+                        android:textColor="#C6EB1111" />
 
                 </LinearLayout>
 
             </LinearLayout>
             <!--            //-->
             <LinearLayout
+                android:id="@+id/veban"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:layout_weight="1"
-                android:id="@+id/veban"
                 android:orientation="vertical"
                 android:weightSum="2">
 
@@ -293,14 +400,14 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:background="#B0A3A3" />
 
             <LinearLayout
+                android:id="@+id/chieucao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:id="@+id/chieucao"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -311,16 +418,16 @@
 
 
                     <ImageView
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_margin="10dp"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_margin="@dimen/_10sdp"
                         android:background="@drawable/ruler" />
 
                     <TextView
-                        android:layout_width="80dp"
-                        android:layout_height="25dp"
-                        android:layout_margin="10dp"
-                        android:text="Chiều cao"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:text="Cao"
                         android:textColor="#000000" />
 
                     <LinearLayout
@@ -330,17 +437,17 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:layout_width="180dp"
+                            android:layout_width="@dimen/_180sdp"
                             android:layout_height="wrap_content"
-                            android:layout_marginRight="20dp"
+                            android:layout_marginRight="@dimen/_20sdp"
                             android:gravity="right"
                             android:text="170cm"
                             android:textSize="16sp" />
 
                         <ImageView
-                            android:layout_width="15dp"
-                            android:layout_height="15dp"
-                            android:layout_marginRight="30dp"
+                            android:layout_width="@dimen/_15sdp"
+                            android:layout_height="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_30sdp"
                             android:background="@drawable/next"></ImageView>
                     </LinearLayout>
 
@@ -350,14 +457,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
-
                 android:background="#B0A3A3" />
 
             <LinearLayout
+                android:id="@+id/cannang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:id="@+id/cannang"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -411,10 +517,10 @@
                 android:background="#B0A3A3" />
 
             <LinearLayout
+                android:id="@+id/ruoubia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:id="@+id/ruoubia"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -467,10 +573,10 @@
                 android:background="#B0A3A3" />
 
             <LinearLayout
+                android:id="@+id/hutthuoc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:id="@+id/hutthuoc"
                 android:orientation="horizontal">
 
                 <LinearLayout
@@ -523,10 +629,10 @@
                 android:background="#B0A3A3" />
 
             <LinearLayout
+                android:id="@+id/ngonngu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:id="@+id/ngonngu"
                 android:orientation="horizontal">
 
                 <LinearLayout

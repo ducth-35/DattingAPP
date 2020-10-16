@@ -92,7 +92,7 @@ public class Batgap_fragment extends Fragment {
         manager.setSwipeableMethod(SwipeableMethod.AutomaticAndManual);
         manager.setOverlayInterpolator(new LinearInterpolator());
 
-        adapter = new Batgap_adapter(batgaps, getContext());
+        adapter = new Batgap_adapter(batgaps, getContext(),manager);
         cardStackView.setLayoutManager(manager);
         cardStackView.setAdapter(adapter);
         cardStackView.setItemAnimator(new DefaultItemAnimator());
@@ -110,16 +110,16 @@ public class Batgap_fragment extends Fragment {
 
     private void addList() {
         batgaps = new ArrayList<>();
-        batgaps.add(new Batgap(R.drawable.gai1, "Nguyễn Mai Trang", "18", "Hà Nội 1"));
-        batgaps.add(new Batgap(R.drawable.gai4, "Nguyễn Huyền", "20", "Hà Nội 2"));
-        batgaps.add(new Batgap(R.drawable.gai2, "Thảo Vy", "20", "Hà Nội 3"));
-        batgaps.add(new Batgap(R.drawable.gai3, "Trần Ngọc Anh", "19", "Hà Nội 4"));
-        batgaps.add(new Batgap(R.drawable.gai4, "Ngọc Mai", "20", "Hà Nội 5"));
-        batgaps.add(new Batgap(R.drawable.gai1, "Thùy Linh", "21", "Hà Nội 6"));
-        batgaps.add(new Batgap(R.drawable.gai3, "Quỳnh Anh", "24", "Hà Nội 7"));
-        batgaps.add(new Batgap(R.drawable.gai2, "Phương Anh", "20", "Hà Nội 8"));
-        batgaps.add(new Batgap(R.drawable.gai4, "Mai Trang ", "23", "Hà Nội 9"));
-        batgaps.add(new Batgap(R.drawable.gai1, "Nguyễn Mai Trang", "20", "Hà Nội 20"));
+        batgaps.add(new Batgap(R.drawable.gai1, "Nguyễn Mai Trang", "18", "Hà Nội "));
+        batgaps.add(new Batgap(R.drawable.gai4, "Nguyễn Huyền", "20", "Ninh Bình"));
+        batgaps.add(new Batgap(R.drawable.gai2, "Thảo Vy", "20", "Ninh Bình"));
+        batgaps.add(new Batgap(R.drawable.gai3, "Trần Ngọc Anh", "19", "Đà Nẵng"));
+        batgaps.add(new Batgap(R.drawable.gai4, "Ngọc Mai", "20", "La Châu"));
+        batgaps.add(new Batgap(R.drawable.gai1, "Thùy Linh", "21", "Khánh Hòa "));
+        batgaps.add(new Batgap(R.drawable.gai3, "Quỳnh Anh", "24", "TP HCM"));
+        batgaps.add(new Batgap(R.drawable.gai2, "Phương Anh", "20", "Vĩnh Phúc"));
+        batgaps.add(new Batgap(R.drawable.gai4, "Mai Trang ", "23", "Nghệ An"));
+        batgaps.add(new Batgap(R.drawable.gai1, "Nguyễn Mai Trang", "20", "Hà Tĩnh"));
     }
      private void img(){
          img.setOnClickListener(new View.OnClickListener() {

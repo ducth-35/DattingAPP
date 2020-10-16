@@ -2,21 +2,19 @@ package com.example.dating.model;
 
 public class Ganday {
     private int image;
-    private String text;
+    private String name;
     private String Statu;
     private String age;
     private String city;
-    private String name;
+    private String text;
 
-
-
-    public Ganday(int image, String text, String statu, String age) {
+    public Ganday(int image, String name, String statu, String age, String city, String text) {
         this.image = image;
-        this.text = text;
+        this.name = name;
         Statu = statu;
         this.age = age;
         this.city = city;
-        this.name = name;
+        this.text = text;
     }
 
     public int getImage() {
@@ -27,12 +25,12 @@ public class Ganday {
         this.image = image;
     }
 
-    public String getText() {
-        return text;
+    public String getName() {
+        return name;
     }
 
-    public void setText(String text) {
-        this.text = text;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getStatu() {
@@ -58,11 +56,12 @@ public class Ganday {
     public void setCity(String city) {
         this.city = city;
     }
-    public String getName() {
-        return name;
+
+    public String getText() {
+        return text;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setText(String text) {
+        this.text = text;
     }
 }

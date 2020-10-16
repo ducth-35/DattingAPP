@@ -24,7 +24,7 @@
 
         <TextView
             android:id="@+id/textView4"
-            android:layout_width="@dimen/_100sdp"
+            android:layout_width="match_parent"
             android:layout_height="@dimen/_35sdp"
             android:gravity="center"
             android:text="Chiều cao"
@@ -35,7 +35,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.762"></TextView>
+            app:layout_constraintVertical_bias="0.93"></TextView>
 
         <LinearLayout
             android:id="@+id/bottomSheetcontainer"

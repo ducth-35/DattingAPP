@@ -53,7 +53,7 @@
             <TextView
                 android:id="@+id/message"
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="@dimen/_30sdp"
                 android:layout_weight="1"
                 android:text="Tối nay đi Cafe nhé !"
                 android:textSize="14sp" />

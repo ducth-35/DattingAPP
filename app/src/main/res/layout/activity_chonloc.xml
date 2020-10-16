@@ -88,7 +88,6 @@
                     android:layout_marginBottom="@dimen/_15sdp"
                     android:layout_weight="1"
                     android:button="@null"
-                    android:checked="false"
                     android:gravity="center"
                     android:text="Nam"
                     android:textSize="16dp" />
@@ -100,9 +99,10 @@
                     android:layout_marginBottom="@dimen/_15sdp"
                     android:layout_weight="1"
                     android:button="@null"
-                    android:checked="true"
+                    android:background="@drawable/custom_button_pressed"
                     android:gravity="center"
                     android:text="Nữ"
+                    android:textColor="@color/white"
                     android:textSize="16dp" />
 
                 <RadioButton
@@ -112,7 +112,6 @@
                     android:layout_marginBottom="@dimen/_15sdp"
                     android:layout_weight="1"
                     android:button="@null"
-                    android:checked="false"
                     android:gravity="center"
                     android:text="Cả hai"
                     android:textSize="16dp" />
@@ -144,7 +143,7 @@
                     android:id="@+id/tv_min"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/_240sdp"
+                    android:layout_marginLeft="@dimen/_250sdp"
                     android:layout_marginTop="@dimen/_20sdp"
                     android:layout_marginBottom="@dimen/_20sdp"
                     android:text="16"
@@ -183,16 +182,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:bar_color="#F59292"
-                app:bar_highlight_color="#F73A3A"
+                app:bar_highlight_color="#FF0066"
                 app:corner_radius="10"
                 app:data_type="_integer"
                 app:gap="2"
-                app:left_thumb_color="#F73A3A"
-                app:left_thumb_color_pressed="#F73A3A"
+                app:left_thumb_color="#FF0066"
+                app:left_thumb_color_pressed="#FF0066"
                 app:max_value="22"
                 app:min_value="16"
-                app:right_thumb_color="#F73A3A"
-                app:right_thumb_color_pressed="#F73A3A" />
+                app:right_thumb_color="#FF0066"
+                app:right_thumb_color_pressed="#FF0066" />
         </LinearLayout>
 
         <LinearLayout
@@ -248,16 +247,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:bar_color="#F59292"
-                app:bar_highlight_color="#F73A3A"
+                app:bar_highlight_color="#FF0066"
                 app:corner_radius="10"
                 app:data_type="_integer"
                 app:gap="2"
-                app:left_thumb_color="#F73A3A"
-                app:left_thumb_color_pressed="#F73A3A"
+                app:left_thumb_color="#FF0066"
+                app:left_thumb_color_pressed="#FF0066"
                 app:max_value="50"
                 app:min_value="0"
-                app:right_thumb_color="#F73A3A"
-                app:right_thumb_color_pressed="#F73A3A" />
+                app:right_thumb_color="#FF0066"
+                app:right_thumb_color_pressed="#FF0066" />
 
             <Button
                 android:id="@+id/btn_apdung"

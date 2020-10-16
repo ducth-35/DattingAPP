@@ -4,5 +4,7 @@
     <color name="colorPrimaryDark">#FF0066</color>
     <color name="colorAccent">#03DAC5</color>
     <color name="com_facebook_blue">#3A5FCD</color>
+    <color name="vetoi">#000</color>
     <color name="common_google_signin_btn_text_dark">#ffffff</color>
+    <color name="gioi_tinh">#ffffff</color>
 </resources>

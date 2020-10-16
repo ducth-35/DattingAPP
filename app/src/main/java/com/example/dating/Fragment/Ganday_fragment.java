@@ -49,23 +49,23 @@ public class Ganday_fragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mlist = new ArrayList<>();
-        mlist.add(new Ganday(R.drawable.gai1, "Nguyễn Mai Trang", "", "21"));
-        mlist.add(new Ganday(R.drawable.gai2, "Nguyễn Huyền", "", "22"));
-        mlist.add(new Ganday(R.drawable.gai3, "Thảo Vy", "", "22"));
-        mlist.add(new Ganday(R.drawable.gai1, "Trần Ngọc Anh", "", "22"));
-        mlist.add(new Ganday(R.drawable.gai2, "Ngọc Mai", "", "22"));
-        mlist.add(new Ganday(R.drawable.gai3, "Thùy Linh", "", "22"));
-        mlist.add(new Ganday(R.drawable.gai1, "Quỳnh Anh", "", "22"));
-        mlist.add(new Ganday(R.drawable.gai2, "Phương Anh", "", "22"));
-        mlist.add(new Ganday(R.drawable.gai3, "Mai Trang ", "", "22"));
-        mlist.add(new Ganday(R.drawable.gai1, "Nguyễn Mai Trang", "", "21"));
-        mlist.add(new Ganday(R.drawable.gai2, "Nguyễn Huyền", "", "22"));
-        mlist.add(new Ganday(R.drawable.gai3, "Thảo Vy", "", "22"));
-        mlist.add(new Ganday(R.drawable.gai1, "Trần Ngọc Anh", "", "22"));
-        mlist.add(new Ganday(R.drawable.gai2, "Ngọc Mai", "", "22"));
-        mlist.add(new Ganday(R.drawable.gai3, "Thùy Linh", "", "22"));
-        mlist.add(new Ganday(R.drawable.gai1, "Quỳnh Anh", "", "22"));
-        mlist.add(new Ganday(R.drawable.gai2, "Phương Anh", "", "22"));
+        mlist.add(new Ganday(R.drawable.gai1, "Nguyễn Mai Trang", "","21","Hà Nội",""));
+        mlist.add(new Ganday(R.drawable.gai2, "Nguyễn Huyền", "", "22","Ninh Bình",""));
+        mlist.add(new Ganday(R.drawable.gai3, "Thảo Vy", "", "22","Ninh Bình",""));
+        mlist.add(new Ganday(R.drawable.gai1, "Trần Ngọc Anh", "", "22","Đà Nẵng",""));
+        mlist.add(new Ganday(R.drawable.gai2, "Ngọc Mai", "", "22","La Châu",""));
+        mlist.add(new Ganday(R.drawable.gai3, "Thùy Linh", "", "22","Khánh Hòa ",""));
+        mlist.add(new Ganday(R.drawable.gai1, "Quỳnh Anh", "", "22","TP HCM",""));
+        mlist.add(new Ganday(R.drawable.gai2, "Phương Anh", "", "22","Vĩnh Phúc",""));
+        mlist.add(new Ganday(R.drawable.gai3, "Mai Trang ", "", "22","Nghệ An",""));
+        mlist.add(new Ganday(R.drawable.gai1, "Nguyễn Mai Trang", "", "21","Hà Tĩnh",""));
+        mlist.add(new Ganday(R.drawable.gai2, "Nguyễn Huyền", "", "22","Hà Tĩnh",""));
+        mlist.add(new Ganday(R.drawable.gai3, "Thảo Vy", "", "22","Ninh Bình",""));
+        mlist.add(new Ganday(R.drawable.gai1, "Trần Ngọc Anh", "", "22","Ninh Bình",""));
+        mlist.add(new Ganday(R.drawable.gai2, "Ngọc Mai", "", "22","Ninh Bình",""));
+        mlist.add(new Ganday(R.drawable.gai3, "Thùy Linh", "", "22","Ninh Bình",""));
+        mlist.add(new Ganday(R.drawable.gai1, "Quỳnh Anh", "", "22","Ninh Bình",""));
+        mlist.add(new Ganday(R.drawable.gai2, "Phương Anh", "", "22","Ninh Bình",""));
     }
 
     private void img() {
